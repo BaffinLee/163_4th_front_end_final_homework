@@ -157,7 +157,7 @@ function followUs () {
 
 	// 已经登录，调用接口关注
 	if (CookieUtil.get('loginSuc') == 1) {
-		getDataFromUrl('http://study.163.com/webDev/attention.htm', followUs);
+		getDataFromUrl('https://study.163.com/webDev/attention.htm', followUs);
 
 	// 未登录弹出登录弹窗
 	} else {
@@ -255,7 +255,7 @@ function toLogin (event) {
 	}
 
 	// 没错误就 Ajax 登录
-	getDataFromUrl("http://study.163.com//webDev/login.htm?userName=" + md5(userNameText) + "&password=" + md5(passwordText), loginCallback);
+	getDataFromUrl("https://study.163.com//webDev/login.htm?userName=" + md5(userNameText) + "&password=" + md5(passwordText), loginCallback);
 }
 
 /**
@@ -385,14 +385,14 @@ function loadCourseList (type, pageNo) {
 	}
 	
 	if (typeNo === 10 || typeNo === 30) {
-		getDataFromUrl('http://study.163.com/webDev/couresByCategory.htm?pageNo=' + pageNo + '&psize=' + psize + '&type=10', function (result) {
+		getDataFromUrl('https://study.163.com/webDev/couresByCategory.htm?pageNo=' + pageNo + '&psize=' + psize + '&type=10', function (result) {
 			updateCourseList(result, 'design');
 		});
 		window.pageNow["design"] = pageNo;
 	} 
 	
 	if (typeNo === 20 || typeNo === 30) {
-		getDataFromUrl('http://study.163.com/webDev/couresByCategory.htm?pageNo=' + pageNo + '&psize=' + psize + '&type=20', function (result) {updateCourseList(result, 'language');
+		getDataFromUrl('https://study.163.com/webDev/couresByCategory.htm?pageNo=' + pageNo + '&psize=' + psize + '&type=20', function (result) {updateCourseList(result, 'language');
 		});
 		window.pageNow["language"] = pageNo;
 	}
@@ -522,7 +522,7 @@ function switchCourseTab (which) {
  * 获取最热课程列表
  */
 function loadHotCourseList () {
-	getDataFromUrl('http://study.163.com/webDev/hotcouresByCategory.htm', updateHotCourseList);
+	getDataFromUrl('https://study.163.com/webDev/hotcouresByCategory.htm', updateHotCourseList);
 }
 
 /**
