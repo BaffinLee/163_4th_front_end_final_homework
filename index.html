@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/iconfont.css">
 </head>
 <body>
+	<!-- 顶部提醒 -->
 	<div class="notice" id="notice">
 		<div class="wrap clearfix">
 			<p class="n-left">
@@ -21,6 +22,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- 导航 -->
 	<div class="header">
 		<div class="wrap clearfix">
 			<h1 class="h-brand">
@@ -59,16 +61,24 @@
 			</ul>
 		</div>
 	</div>
-	<div class="banner">
-		<img src="images/banner1.jpg" alt="网易公开课" class="on" data="1">
-		<img src="images/banner2.jpg" alt="网易云课堂" data="2">
-		<img src="images/banner3.jpg" alt="中国大学MOOC" data="3">
-		<div class="b-dot" id="changeImg">
-			<i class="icon-circle on" data="1"></i>
+	<!-- 轮播图 -->
+	<div class="banner" id="banner">
+		<a href="http://open.163.com" target="_blank">
+			<img src="images/banner1.jpg" alt="网易公开课" class="on">
+		</a>
+		<a href="http://study.163.com" target="_blank">
+			<img src="images/banner2.jpg" alt="网易云课堂">
+		</a>
+		<a href="http://www.icourse163.com" target="_blank">
+			<img src="images/banner3.jpg" alt="中国大学MOOC">
+		</a>
+		<div class="b-dot" id="bannerImgDot">
+			<i class="icon-circle on" data="0"></i>
+			<i class="icon-circle" data="1"></i>
 			<i class="icon-circle" data="2"></i>
-			<i class="icon-circle" data="3"></i>
 		</div>
 	</div>
+	<!-- 分类模块 -->
 	<div class="module">
 		<div class="wrap">
 			<ul class="m-ul clearfix">
@@ -96,6 +106,7 @@
 			</ul>
 		</div>
 	</div>
+	<!-- 工作环境 -->
 	<div class="space">
 		<div class="s-img clearfix" title="豪华健身房、射击馆、篮球馆、网球馆、瑜伽课、陶艺课免费一日五餐，大龙虾、精瘦牛肉、披萨、火锅、各式零食等">
 			<img src="images/space1.png" alt="工作环境">
@@ -105,13 +116,17 @@
 			<img src="images/space5.png" alt="工作环境">
 		</div>
 	</div>
+	<!-- 课程 -->
 	<div class="course">
 		<div class="wrap clearfix">
+			<!-- 课程左边 -->
 			<div class="c-left clearfix">
+				<!-- 课程Tab -->
 				<div class="c-l-tab clearfix">
 					<h3 class="on" id="designTab">产品设计</h3>
 					<h3 id="languageTab">编程语言</h3>
 				</div>
+				<!-- 设计课程列表 -->
 				<ul class="c-l-list clearfix" id="designCourseList">
 					<li>
 						<div>
@@ -794,8 +809,11 @@
 						</div>
 					</li>
 				</ul>
+				<!-- 语言课程列表 -->
 				<ul class="c-l-list clearfix" id="languageCourseList"></ul>
+				<!-- 分页 -->
 				<div class="c-l-paging" id="paging">
+					<!-- 设计课程分页 -->
 					<ol class="clearfix" id="designPaging">
 						<li class="prev">&lt;</li>
 						<li class="on">1</li>
@@ -808,18 +826,103 @@
 						<li>8</li>
 						<li class="next">&gt;</li>
 					</ol>
-					<ol class="clearfix" id="languagePaging"></ol>
+					<!-- 语言课程分页 -->
+					<ol class="clearfix" id="languagePaging">
+						<li class="prev">&lt;</li>
+						<li class="on">1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+						<li>7</li>
+						<li>8</li>
+						<li class="next">&gt;</li>
+					</ol>
 				</div>
 			</div>
+			<!-- 课程右边 -->
 			<div class="c-right">
+				<!-- 视频介绍 -->
 				<div class="c-r-video">
 					<h3>机构介绍</h3>
 					<p>观看下面的视频了解吧：</p>
 					<img src="images/video.png" alt="视频介绍" id="showVideoBtn">
 				</div>
+				<!-- 最热课程列表 -->
 				<div class="c-r-hot">
 					<h3>最热排行</h3>
 					<ul class="c-r-h-list" id="hotCourseList">
+						<li>
+							<a href="#">
+								<img src="images/hotlist.png" alt="课程">
+								<h4>1舞曲揭秘音乐揭秘课程</h4>
+							</a>
+							<span>
+								<i class="icon-user"></i>
+								2056
+							</span>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/hotlist.png" alt="课程">
+								<h4>2舞曲揭秘音乐揭秘课程</h4>
+							</a>
+							<span>
+								<i class="icon-user"></i>
+								2056
+							</span>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/hotlist.png" alt="课程">
+								<h4>3舞曲揭秘音乐揭秘课程</h4>
+							</a>
+							<span>
+								<i class="icon-user"></i>
+								2056
+							</span>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/hotlist.png" alt="课程">
+								<h4>5舞曲揭秘音乐揭秘课程</h4>
+							</a>
+							<span>
+								<i class="icon-user"></i>
+								2056
+							</span>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/hotlist.png" alt="课程">
+								<h4>6舞曲揭秘音乐揭秘课程</h4>
+							</a>
+							<span>
+								<i class="icon-user"></i>
+								2056
+							</span>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/hotlist.png" alt="课程">
+								<h4>舞曲揭秘音乐揭秘课程</h4>
+							</a>
+							<span>
+								<i class="icon-user"></i>
+								2056
+							</span>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/hotlist.png" alt="课程">
+								<h4>舞曲揭秘音乐揭秘课程</h4>
+							</a>
+							<span>
+								<i class="icon-user"></i>
+								2056
+							</span>
+						</li>
 						<li>
 							<a href="#">
 								<img src="images/hotlist.png" alt="课程">
@@ -925,6 +1028,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- 底部信息 -->
 	<div class="footer">
 		<div class="wrap clearfix">
 			<div class="f-name">
@@ -935,11 +1039,11 @@
 				<div>
 					<span>&copy;2014 </span>
 					<a href="http://icourse163.org" target="_blank">icourse163.org</a>
-					<a href="#" target="_blank">浙ICP备08114786号-1</a>
+					<a href="http://www.miibeian.gov.cn/" target="_blank">浙ICP备08114786号-1</a>
 				</div>
 				<div>
 					<a href="http://icourses.cn" target="_blank">icourses.cn</a>
-					<a href="#" target="_blank">京ICP备12020869号-2 京公网安备110102000459-2</a>
+					<a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备12020869号-2 京公网安备110102000459-2</a>
 				</div>
 			</div>
 			<div class="f-links">
@@ -986,11 +1090,14 @@
 			</div>
 		</div>
 	</div>
+	<!-- 弹出层 -->
 	<div class="popup" id="popup">
-		<div class="p-content">
+		<div class="p-content" id="p-content">
+			<!-- 关闭按钮 -->
 			<div class="p-c-close" id="closeBtn">
 				<i class="icon-cancel"></i>
 			</div>
+			<!-- 登陆弹出层 -->
 			<div class="p-c-login" id="loginPopup">
 				<p>登陆网易云课堂</p>
 				<form id="loginForm">
@@ -999,6 +1106,7 @@
 					<input type="submit" value="登陆">
 				</form>
 			</div>
+			<!-- 视频介绍弹出层 -->
 			<div class="p-c-video" id="videoPopup">
 				<p>请观看下面的视频</p>
 				<video src="http://mov.bn.netease.com/open-movie/nos/mp4/2014/12/30/SADQ86F5S_shd.mp4" id="introduceVideo" controls="controls" height="508" width="890" poster="images/videocover.png">
